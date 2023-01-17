@@ -1,0 +1,21 @@
+.pagination{    
+    justify-content: space-evenly;
+    /* display: flex;
+    flex-direction: row; */
+}
+
+.pagination .pj:hover:not(.active){
+    background-color: rgba(55, 195, 242, 0.571);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.pj{
+    color: black;
+    background-color: rgb(33, 121, 141);
+    padding: 10px 16px; 
+    border-radius: 15%; 
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+

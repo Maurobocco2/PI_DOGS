@@ -1,0 +1,85 @@
+.home_container{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+.filter_AZ, .return{
+    text-decoration: none;
+    font-weight: bold;
+    background-color: rgb(135, 131, 131);
+    color: white;
+    font-size: 20px;
+	height: 30px;
+	border: 0px;
+	border-radius: 10px 0px 0px 10px;
+	/* box-shadow: 0 10px 50px rgb(0, 0, 0); */
+	text-shadow: 0.1em 0.1em 0.2em rgba(0, 0, 0, 0.472);
+    cursor: pointer;
+}
+
+.filter_temps, .reload {
+    text-decoration: none;
+    font-weight: bold;
+    background-color: rgb(135, 131, 131);
+    color: white;
+    font-size: 20px;
+	height: 30px;
+	border: 0px;
+	border-radius: 0px 10px 10px 0px;
+	/* box-shadow: 0 10px 50px rgb(0, 0, 0); */
+	text-shadow: 0.1em 0.1em 0.2em rgba(0, 0, 0, 0.472);
+    cursor: pointer;
+}
+
+.btnCreate{
+    /* margin-top: 150px;*/
+    position: relative;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: rgb(135, 131, 131);
+    color: white;
+    border-color: black;
+    font-size: 20px;
+	height: 30px;
+	border: 15px;
+	border-radius: 10px 10px;
+	/* box-shadow: 0 10px 50px rgb(0, 0, 0); */
+	text-shadow: 0.1em 0.1em 0.2em rgba(0, 0, 0, 0.472);
+    cursor: pointer;
+}
+
+.filter_Weight, .filter_origin{
+    text-decoration: none;
+    font-weight: bold;
+    background-color: rgb(135, 131, 131);
+    color: white;
+    font-size: 20px;
+	height: 30px;
+	border: 0px;
+	/* box-shadow: 0 10px 50px rgb(0, 0, 0); */
+	text-shadow: 0.1em 0.1em 0.2em rgba(0, 0, 0, 0.472); 
+    cursor: pointer;
+
+}
+
+
+.filter_AZ, .return, .filter_Weight, .filter_origin, .filter_temps{
+    margin-top: 20px;
+
+}
+
+.filter_AZ:hover, .return:hover, .btnCreate:hover, .filter_Weight:hover, .filter_origin:hover, .filter_temps:hover, .reload:hover{
+    cursor: pointer;
+    color: black;
+	transition: 150ms;
+}
+
+.card_container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-left: 25%;
+    margin-right: 25%;
+}

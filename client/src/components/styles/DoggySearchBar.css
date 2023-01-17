@@ -1,0 +1,36 @@
+.Bar input{
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+  }
+  
+  
+  .doggy_search{
+    height: 100%;
+    width: 450px;
+    font-size: 32px;
+    border: 1px solid black;
+    margin-top: 15px; 
+  }
+  
+  .doggy_search_button{
+    font-weight: bold;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background-color: rgb(6, 52, 62);
+    color: white;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .doggy_search_button:hover{
+    background:rgba(55, 195, 242, 0.571);
+    cursor: pointer;
+      transition: 150ms;
+  }
+  
+  
+  
