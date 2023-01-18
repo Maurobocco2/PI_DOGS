@@ -28,8 +28,11 @@ const DoggyCreation = ()=>{
     });
 
     useEffect(()=>{
-        dispatch(getDogs());
         dispatch(getTemperaments());
+    }, [dispatch]);
+
+    useEffect(()=>{
+        dispatch(getDogs());
     }, [dispatch]);
 
     const handleInputChange = e =>{

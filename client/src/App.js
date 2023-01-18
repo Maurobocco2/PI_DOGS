@@ -13,7 +13,7 @@ function App() {
         <Route exact path="/" component ={DoggyLanding}/>
         <Route exact path="/home" component ={DoggyHome}/>
         <Route exact path="/details/:id" component ={DoggyDetail}/>
-        <Route exact path="/create" component ={DoggyCreation}/>
+        <Route exact path="/dog" component ={DoggyCreation}/>
       </Switch>
     </div>
     </BrowserRouter>

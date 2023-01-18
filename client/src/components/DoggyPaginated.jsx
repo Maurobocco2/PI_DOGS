@@ -21,5 +21,5 @@ export default function DoggyPaginated({dogsPerPage, dogs, paginated }){
                 )
             )}
         </div>
-    )
-} 
+    );
+}; 

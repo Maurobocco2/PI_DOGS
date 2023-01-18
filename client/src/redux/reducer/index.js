@@ -51,7 +51,7 @@ const rootReducer = (state = initialState, action) => {
 			};
 			
 		case FILTER_BY_TEMP:
-			const allDogs = state.allDogs;
+			const allDogs = [...state.allDogs];
 			let dogsFiltered = action.payload === "All" ? 
 			allDogs : 
 			allDogs.filter(el =>el.temperament?.toLowerCase()
@@ -62,7 +62,7 @@ const rootReducer = (state = initialState, action) => {
 			};
 
 		case FILTER_BY_ORIGIN:
-			const all = state.allDogs;
+			const all = [...state.allDogs];
 			const filterByDB = action.payload === "existent" ?
 			all.filter(d => d.id < 300) : 
 			all.filter(r => r.id.length > 3);
@@ -72,7 +72,7 @@ const rootReducer = (state = initialState, action) => {
 			};
 		
 		case ALPH_ORDER:
-			const dogs = state.allDogs;
+			const dogs = [...state.allDogs];
 			const orderedBreeds= action.payload === "desc" ? 
 			dogs.sort((a,b) => {
 			  if (a.name > b.name) return 1;
@@ -91,10 +91,10 @@ const rootReducer = (state = initialState, action) => {
 
 		case WEIGHT_ORDER:
 			const sortedWeights= action.payload === "Asc" ?
-			state.dogs.sort((a,b) =>{
+			[...state.dogs].sort((a,b) =>{
 			  return parseInt(a.minWeight) - parseInt(b.minWeight)
 			}) :
-			state.dogs.sort((a,b) =>{
+			[...state.dogs].sort((a,b) =>{
 			  return parseInt(b.maxWeight) - parseInt(a.maxWeight)
 			});
 			return {

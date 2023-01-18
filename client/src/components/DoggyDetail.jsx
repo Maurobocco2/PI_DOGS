@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, { useEffect, useState } from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {useParams, Link} from "react-router-dom";
 import { doggyDetail } from "../redux/actions";
@@ -26,21 +26,22 @@ const DoggyDetail = () =>{
             </Link>
 
             {
-                details.length > 0 ?(
+                Object.keys(details).length > 0 ?(
                     <div>
                         <h1 className="detail_name">{details[0].name}</h1>
                         <img className="detail_img" src={details[0].image} alt={details[0].name} width="700px" height="650px"/>
                         <h2 className="detail_temps">Tempraments: </h2>
+
                         <div className="tempss">
                             {
                                 details[0].createdInDb ?
-                                details[0].temperament.map(e => {
+                                details[0].temperaments.map(e => {
                                    return( 
-                                        <li key={e.dog_temperament.temperamentId}>
+                                        <h3>
                                              <label>
                                                  {e.name}
                                              </label>
-                                        </li>
+                                        </h3>
                                     )
                                 }) :
                                 details[0].temperament ?
@@ -59,7 +60,7 @@ const DoggyDetail = () =>{
                         <div className="detail_info">
                             <h3 className="detail_w">Height between: {details[0].minHeight} - {details[0].maxHeight} Cm</h3>
                             <h3 className="detail_w">Weight between: {details[0].minWeight} - {details[0].maxWeight} Kg</h3>
-                            <h3 className="detail_l">Life Span: {details[0].life_span} </h3>
+                            <h3 className="detail_l">Life Span: {details[0].life_span} years </h3>
                         </div>
                     </div>
                 ):

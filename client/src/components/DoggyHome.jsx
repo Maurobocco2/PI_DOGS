@@ -149,9 +149,6 @@ function DoggyHome() {
                            temperament={el.temperament}
                            minWeight={el.minWeight} 
                            maxWeight={el.maxWeight} 
-                           minHeight={el.minHeight}
-                           maxHeight={el.maxHeight}
-                           life_span={el.life_span}
                         />
                      </div>
                   )
